@@ -1,0 +1,29 @@
+
+@import "bootstrap/dist/css/bootstrap";
+// @import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
+.navbar {
+  background-color: blue !important;
+}
+
+.navbar-brand {
+  font-size: 3rem;
+}
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+
