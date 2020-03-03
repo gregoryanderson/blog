@@ -1,9 +1,6 @@
-
 @import "bootstrap/dist/css/bootstrap";
 // @import "bootstrap-sprockets";
 @import "bootstrap";
-
-
 
 .navbar {
   background-color: blue !important;
@@ -16,19 +13,19 @@
 #logo {
   float: left;
   font-size: 1.7em;
-  color: #FFF;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: bold;
 }
 
 #logo:hover {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
 
 .center {
-  text-align:center;
+  text-align: center;
 }
 
 .article-actions {
@@ -44,4 +41,37 @@
 .article-body {
   border-top: 1px solid #eaeaea;
   padding: 15px 0px;
+}
+
+.no-radius {
+  border-radius: 0px;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
 }
