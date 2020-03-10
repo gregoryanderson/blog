@@ -23,12 +23,12 @@ class CategoryTest < ActiveSupport::TestCase
 
   test "name should not be too long" do
     @category.name = "a" * 26
-    assert_not category.valid?
+    assert_not @category.valid?
   end
 
   test "name should not be too short" do
     @category.name = "a" * 2
-    assert_not category.valid?
+    assert_not @category.valid?
   end
 
 end
