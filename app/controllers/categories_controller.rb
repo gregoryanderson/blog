@@ -8,6 +8,10 @@ class CategoriesController < ApplicationController
 
   end 
 
+  def create
+
+  end
+
   def show
 
   end
