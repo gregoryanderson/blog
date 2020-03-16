@@ -31,6 +31,31 @@
         <li class="nav-item"> <%= link_to "Log In", login_path, class:"nav-link" %> </li>
         <li class="nav-item"> <%= link_to "Sign Up ", signup_path, class:"nav-link" %> </li>
       <% end %>
+      <li class="dropdown">
+
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+
+<ul class="dropdown-menu">
+
+<li><%= link_to "All Categories", categories_path %></li>
+
+<% Category.all.each do |category| %>
+
+<li><%= link_to "#{category.name}", category_path(category) %></li>
+
+<% end %>
+
+<% if logged_in? and current_user.admin? %>
+
+<li role="separator" class="divider"></li>
+
+<li><%= link_to "Create New Category", new_category_path %></li>
+
+<% end %>
+
+</ul>
+
+</li>
     </ul>
     <%# <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
