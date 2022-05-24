@@ -25,7 +25,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'pkg-config'
-gem 'nokogiri', '~> 1.10.9'
+gem 'nokogiri', '~> 1.13.6'
 gem 'will_paginate', '3.1.7'
 gem 'bootstrap-will_paginate', '1.0.0'
 
